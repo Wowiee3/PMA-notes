@@ -1,0 +1,1 @@
+An ordinal number is an identifier for an exported function in a DLL. 
