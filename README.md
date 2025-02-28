@@ -1,5 +1,6 @@
 # Practical Malware Analysis Notes
 Book: [https://www.goodreads.com/book/show/10677461-practical-malware-analysis](Goodreads)
+
 Labs: https://github.com/mikesiko/PracticalMalwareAnalysis-Labs
 
 These notes were written in Obsidian. Some Obsidian links may not work in the md files. 
