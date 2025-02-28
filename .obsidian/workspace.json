@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc notes/(TOOL) Resource Hacker.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(TOOL) Resource Hacker"
+              "title": "README"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "(LAB) Part 1 Chapter 1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3f54dda4d4a2442e",
@@ -197,14 +197,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "892ed4e329d198b8",
+  "active": "81c571f232f0fc9d",
   "lastOpenFiles": [
-    "Misc notes/PE File Headers and Sections.md",
-    "Misc notes/(TOOL) Resource Hacker.md",
     "Practical Malware Analysis Notes - Part 1.md",
     "(LAB) Part 1 Chapter 1.md",
+    "README.md",
     "Misc notes/(TOOL) PEview.md",
     "Misc notes/(TOOL) Dependency Walker.md",
+    "Misc notes/(TOOL) Resource Hacker.md",
+    "Misc notes/PE File Headers and Sections.md",
+    "Untitled",
     "Misc notes/Ordinals.md",
     "2025-02-20.md",
     "Misc notes",
