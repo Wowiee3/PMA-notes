@@ -54,6 +54,50 @@ The IP address mentioned earlier in Lab01-01.dll
 Analyze the file Lab01-02.exe.
 ## Questions
 1. Upload the Lab01-02.exe file to http://www.VirusTotal.com/. Does it match any existing antivirus definitions?
+Yes. (sha256: c876a332d7dd8da331cb8eee7ab7bf32752834d4b2b54eaa362674a2a48f64a6)
+
 2. Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible.
+*Open the file with PEiD. PEiD says that the file is packed with UPX.*
+To unpack the file, download UPX. And decompressed with packed PE with the following command:
+`upx -o [newFilename] -d "[pathToFile]"`
+
 3. Do any imports hint at this program’s functionality? If so, which imports are they and what do they tell you?
+Open the file in Dependencies.
+- OpenMutexA: common for malware to have this
+- CreateWaitableTimerA/SetWaitableTimer: seems sussy
+- CreateService/OpenSCManagerA: run malware as service
+- InternetOpenUrlA: open malicious link?
+
 4. What host- or network-based indicators could be used to identify this malware on infected machines?
+Strings the file to find IP addresses. Found a url:
+`http://www.malwareanalysisbook.com`
+
+Also among the strings are "Malservice"; more evidence that this malware is meant to be run as a service.
+
+# Lab 1-3
+Analyze the file Lab01-03.exe.
+## Questions
+1. Upload the Lab01-03.exe file to http://www.VirusTotal.com/. Does it match any existing antivirus definitions?
+Yes (sha265: 7983a582939924c70e3da2da80fd3352ebc90de7b8c4c427d484ff4f050f0aec)
+
+2. Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible.
+Open the file with PEiD. This PE is packed with FSG 1.0. You need to use a debugger to unpack this file. I found a [blogpost](https://www.aldeid.com/wiki/Category:Digital-Forensics/Computer-Forensics/Anti-Reverse-Engineering/Packers/FSG) that teaches you how to do it.
+
+3. Do any imports hint at this program’s functionality? If so, which imports are they and what do they tell you?
+Trying to view imports in pestudio or Dependencies only shows:
+- LoadLibraryA
+- GetProcAddress
+And the only library is KERNEL32.dll. So you can't view anything more unless you unpack this file.
+
+4. What host- or network-based indicators could be used to identify this malware on infected machines?
+The strings here don't have anything useful here. The textbook says that we'll revisit this later, so I guess I'll update this whenever I get to that section.
+
+# Lab 1-4
+Analyze the file Lab01-04.exe.
+## Questions
+1. Upload the Lab01-04.exe file to http://www.VirusTotal.com/. Does it match any existing antivirus definitions?
+2. Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible.
+3. When was this program compiled?
+4. Do any imports hint at this program’s functionality? If so, which imports are they and what do they tell you?
+5. What host- or network-based indicators could be used to identify this malware on infected machines?
+6. This file has one resource in the resource section. Use Resource Hacker to examine that resource, and then use it to extract the resource. What can you learn from the resource?
