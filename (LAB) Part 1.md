@@ -96,8 +96,41 @@ The strings here don't have anything useful here. The textbook says that we'll r
 Analyze the file Lab01-04.exe.
 ## Questions
 1. Upload the Lab01-04.exe file to http://www.VirusTotal.com/. Does it match any existing antivirus definitions?
+Yes. (sha256: 0fa1498340fca6c562cfa389ad3e93395f44c72fd128d7ba08579a69aaf3b126)
+
 2. Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible.
+Open the file with PEiD. PEiD doesn't detect a packer.
+
 3. When was this program compiled?
+Fri Aug 30 22:26:59 2019 (UTC)
+
 4. Do any imports hint at this program’s functionality? If so, which imports are they and what do they tell you?
+- WinExec
+- WriteFile
+- CreateRemoteThread
+- MoveFileA
+- GetCurrentProcess
+- OpenProcess
+- OpenProcessToken
+- LookupPrivilegeValueA
+- AdjustTokenPrivileges
+- CreateFileA
+**ADVAPI32.dll:** The program is messing with permissions
+WriteFile and WinExec shows that it creates a file and executes it.
+
 5. What host- or network-based indicators could be used to identify this malware on infected machines?
-6. This file has one resource in the resource section. Use Resource Hacker to examine that resource, and then use it to extract the resource. What can you learn from the resource?
+Look through the strings
+- http[:]//www.practicalmalwareanalysis.com/updater.exe
+- URLDownloadToFile
+- winlogon.exe
+- urlmon.dll
+- sfc_os.dll
+- psapi.dll
+- \system32\wupdmgr.exe
+It seems like the malware is downloading these files from the first link.
+**Textbook notes:** wipdmgr.exe indicates that the program can create or modify a file at \system32.
+
+1. This file has one resource in the resource section. Use Resource Hacker to examine that resource, and then use it to extract the resource. What can you learn from the resource?
+Open the file in Resource Hacker. It turns out there's a whole other binary in the resource section. You can extract this resource by right clicking on it to save the resource.
+Once I saved this, I opened it in pestudio. Here you can see the URLDownloadToFile being imported. In the initial binary, it was there as a string instead of an import. So this is the downloader part of the malware.
+
