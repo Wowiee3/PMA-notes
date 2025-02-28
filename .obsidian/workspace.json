@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(LAB) Part 1 Chapter 1.md",
+                "file": "(LAB) Part 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(LAB) Part 1 Chapter 1"
+              "title": "(LAB) Part 1"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -197,17 +197,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81c571f232f0fc9d",
+  "active": "692f503b105ad8e0",
   "lastOpenFiles": [
+    "(LAB) Part 1.md",
     "Practical Malware Analysis Notes - Part 1.md",
-    "(LAB) Part 1 Chapter 1.md",
-    "README.md",
-    "Misc notes/(TOOL) PEview.md",
-    "Misc notes/(TOOL) Dependency Walker.md",
-    "Misc notes/(TOOL) Resource Hacker.md",
-    "Misc notes/PE File Headers and Sections.md",
-    "Untitled",
     "Misc notes/Ordinals.md",
+    "Misc notes/(TOOL) Dependency Walker.md",
+    "Misc notes/PE File Headers and Sections.md",
+    "Misc notes/(TOOL) PEview.md",
+    "README.md",
+    "Misc notes/(TOOL) Resource Hacker.md",
+    "Untitled",
     "2025-02-20.md",
     "Misc notes",
     "Test.md"
