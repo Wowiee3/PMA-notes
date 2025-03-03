@@ -8,10 +8,10 @@ I highly don't recommend cloning this repo and importing it as your own Obsidian
 If you want to clone it and import it into your own Obsidian, pls delete the .obsidian file.
 
 ## Part 1: Basic Analysis
-- [Chapter 1 Notes](https://github.com/Wowiee3/PMA-notes/blob/main/Practical%20Malware%20Analysis%20Notes%20-%20Part%201.md)
+- [Chapter 1 Notes](https://github.com/Wowiee3/PMA-notes/blob/main/Part%201%20-%20Chapter%201.md)
 - [Chapter 1 Labs](https://github.com/Wowiee3/PMA-notes/blob/main/(LAB)%20Part%201.md)
-- [Chapter 2 Notes](https://github.com/Wowiee3/PMA-notes/blob/main/Practical%20Malware%20Analysis%20Notes%20-%20Part%202.md)
-- [Chapter 3 Notes](https://github.com/Wowiee3/PMA-notes/blob/main/Practical%20Malware%20Analysis%20Notes%20-%20Part%203.md)
+- [Chapter 2 Notes](https://github.com/Wowiee3/PMA-notes/blob/main/Part%201%20-%20Chapter%202.md)
+- [Chapter 3 Notes](https://github.com/Wowiee3/PMA-notes/blob/main/Part%201%20-%20Chapter%203.md)
 
 ## Part 2
 - TBA
