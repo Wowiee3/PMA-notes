@@ -34,5 +34,6 @@ You may need to install the service manually. In order to do this, use the Windo
 
 ## Tools
 - [[(TOOL) Process Monitor]]
-
+- [[(TOOL) Regshot]]
 ## Labs
+- [[(LAB) Part 1]]

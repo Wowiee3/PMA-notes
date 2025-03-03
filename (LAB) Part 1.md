@@ -152,5 +152,8 @@ Open the file in Resource Hacker. It turns out there's a whole other binary in t
 
 Once I saved this, I opened it in pestudio. Here you can see the URLDownloadToFile being imported. In the initial binary, it was there as a string instead of an import. So this is the downloader part of the malware.
 
+# Lab 3-1
+
+
 
 
