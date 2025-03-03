@@ -17,7 +17,7 @@ If you want to clone it and import it into your own Obsidian, pls delete the .ob
 - TBA
 
 ## Part 3
--TBA
+- TBA
 
 ## Tools
 - [Dependency Walker](https://github.com/Wowiee3/PMA-notes/blob/main/Misc%20notes/(TOOL)%20Dependency%20Walker.md)
