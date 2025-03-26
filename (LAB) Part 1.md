@@ -153,6 +153,28 @@ Open the file in Resource Hacker. It turns out there's a whole other binary in t
 Once I saved this, I opened it in pestudio. Here you can see the URLDownloadToFile being imported. In the initial binary, it was there as a string instead of an import. So this is the downloader part of the malware.
 
 # Lab 3-1
+Analyze the malware found in the file Lab03-01.exe using basic dynamic analy-
+sis tools.
+## Questions
+1. What are this malware’s imports and strings?
+Opened the file in pestudio. Only DLL is kernel32.dll, and one import which is ExitProcess. Notable strings are www[.]practicalmalwareanalysis[.]com, vmx32to64.exe, and some file paths.
+
+2. What are the malware’s host-based indicators?
+3. Are there any useful network-based signatures for this malware? If so,
+what are they?
+
+
+# Lab 3-2
+Analyze the malware found in the file Lab03-02.dll using basic dynamic analy-
+sis tools.
+## Questions
+1. How can you get this malware to install itself?
+2. How would you get this malware to run after installation?
+3. How can you find the process under which this malware is running?
+4. Which filters could you set in order to use procmon to glean
+information?
+5. What are the malware’s host-based indicators?
+6. Are there any useful network-based signatures for this malware?
 
 
 
